@@ -1,0 +1,20 @@
+
+
+input[type="text"] {
+  appearance: none;
+  width: 17rem;
+  border: 1px solid var(--input-stroke);
+  outline: 0;
+
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  padding: .75rem 1rem;
+  font: var(--body-md);
+  
+  &:checked, &:focus-within {
+    border: 1px solid var(--brand-light);
+  }
+  
+
+
+}
