@@ -40,6 +40,7 @@ aside {
 }
 
 main {
+  overflow: auto;
   max-width: 51.25rem;
   background-color: var(--shape-body);
   border-radius: 12px;

@@ -1,74 +1,353 @@
+#eventinfo {
 
-.radio-wrapper {
-  display: flex;
-  gap: .25rem;
-  width: 17rem;
-  height: 3rem;
-  background-color: var(--input-base);
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--input-stroke);
-
-
+  
+  .radio-type-wrapper {
+    display: flex;
+    gap: .25rem;
+    width: 17rem;
+    height: 3rem;
+    background-color: var(--input-base);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--input-stroke);
+    
+    
+  }
+  
+  .radio-inner {
+    
+    display: flex;
+    align-items: center;
+    background-color: var(--input-base);
+    width: 8.125rem;
+    height: 2.5rem;
+    
+    
+    border-radius: 4px;
+    padding: 1rem;
+    justify-content: center;
+    
+    label {
+      margin-block: auto;
+      margin-left: .5rem;
+      font: var(--body-sm);
+      
+      top: 50%;
+      transform: translateY(-30%);
+    }
+    
+    .radio-image-build {
+      background-image: url(../../assets/icons/building-2.svg);
+      background-size: cover;
+      height: 1rem;
+      width: 1rem;
+    }
+    
+    .radio-image-vid {
+      background-image: url(../../assets/icons/video.svg);
+      background-size: cover;
+      height: 1rem;
+      width: 1rem;
+    }
+    
+    input {
+      appearance: none;
+    }
+    
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+    
+    &:checked, &:focus-within {
+      background-color: var(--input-stroke);
+      font: 600 0.75rem var(--font-sans);
+      
+      .radio-image-build {
+        background-image: url(../../assets/icons/building-2-hover.svg);
+      }
+      
+      .radio-image-vid {
+        background-image: url(../../assets/icons/video-hover.svg);
+      }
+      
+    }
+  }
 }
 
-.radio-inner {
-  
-  display: flex;
-  align-items: center;
-  background-color: var(--input-base);
-  width: 8.125rem;
-  height: 2.5rem;
-
-
-  border-radius: 4px;
-  padding: 1rem;
-  justify-content: center;
-
-  label {
-    margin-block: auto;
-    margin-left: .5rem;
-    font: var(--body-sm);
-
-    top: 50%;
-    transform: translateY(-30%);
-  }
-
-  .radio-image-build {
-    background-image: url(../../assets/icons/building-2.svg);
-    background-size: cover;
-    height: 1rem;
-    width: 1rem;
-  }
-
-  .radio-image-vid {
-    background-image: url(../../assets/icons/video.svg);
-    background-size: cover;
-    height: 1rem;
-    width: 1rem;
-  }
+#edit {
 
   input {
     appearance: none;
-}
 
-  img {
-    width: 1rem;
-    height: 1rem;
+
   }
+
+  label {
+    margin-bottom: -.5rem;
+  }
+
+.radio-wrapper {
+
+  width: 35rem;
+  height: 2.6rem;
+  justify-content: space-between;
+  /* margin-bottom: 1.75rem; */
   
-  &:checked, &:focus-within {
-    background-color: var(--input-stroke);
-    font: 600 0.75rem var(--font-sans);
 
-    .radio-image-build {
-      background-image: url(../../assets/icons/building-2-hover.svg);
+  .radio-inner {
+
+
+    #bl {
+      background-color: var(--brand-light);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #na {
+      background-color: var(--navy);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #pu {
+        background-color: var(--purple);
+        width: 2.5rem;
+        height: 2.5rem;
+        border: .35rem solid var(--shape-button);
+        border-radius: 999px;
+        &:hover {
+          border: .35rem solid var(--shape-hover);
+        }
+    }
+    #fu {
+      background-color: var(--fuschia);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #pi {
+      background-color: var(--pink);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #da {
+      background-color: var(--danger);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #or {
+      background-color: var(--orange);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #ye {
+      background-color: var(--yellow);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #li {
+      background-color: var(--lime);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #gr {
+      background-color: var(--green);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    #cy {
+      background-color: var(--cyan);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .35rem solid var(--shape-button);
+      border-radius: 999px;
+      &:hover {
+        border: .35rem solid var(--shape-hover);
+      }
+    }
+    &:has(:checked) {
+      border: 1px solid var(--brand-light);
+      border-radius: 999px;
+      
+    }
+    
+  }
+}
+
+.radio-theme-wrapper {
+  display: grid;
+  width: 35rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+  
+
+  .radio-inner {
+    width: 8.375rem;
+    height: 6.438rem;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    margin-bottom: 1.25rem;
+
+    label {
+      display: flex;
+      justify-content: space-around;
+      margin-top: .2rem;
+    }
+    
+    img {
+      max-width: 7.875rem;
+      max-height: 4rem;
+      margin-top: .25rem;
+      margin-left: .25rem;
+      border-radius: .25rem;
     }
 
-    .radio-image-vid {
-      background-image: url(../../assets/icons/video-hover.svg);
+    &:hover {
+      background-color: var(--shape-hover);
+      padding: -1px;
     }
-   
+
+    &:has(:checked) {
+      border: 1px solid var(--brand-light);
+      margin: -1px;
+    }
+  }
 }
+
+.switch {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
 }
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.toggle > label {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 44px;
+  background: #1C1F21;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.toggle > label:after {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background: #363B40;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+  content: '';
+  transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+  transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+  background: #59B2FF;
+}
+.toggle > input:checked ~ label:after {
+  left: 20px;
+  background: white;
+  
+}
+.toggle > input:disabled ~ label {
+  background: #d5d5d5;
+  pointer-events: none;
+}
+.toggle > input:disabled ~ label:after {
+  background: #bcbdbc;
+}
+
+.toggle {
+  margin-bottom: 40px;
+}
+.toggle > input {
+  display: none;
+}
+
+html, body {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body {
+  background: #eee;
+}
+  
+.style {
+  margin-bottom: 1.15rem;
+}
+
+#text-button {
+  display: flex;
+  gap: .75rem;
+
+  
+}
+
+
+
+}
+
+  
+
+
+

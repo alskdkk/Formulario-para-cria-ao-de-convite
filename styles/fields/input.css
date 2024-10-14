@@ -4,6 +4,7 @@
 
   #eventname, textarea {
     appearance: none;
+    margin-bottom: 1rem;
     width: 35rem;
     border-radius: .5rem;
     border: 1px solid var(--input-stroke);
@@ -59,4 +60,5 @@
 .placeholder {
   color: var(--te);
 }
+
 
