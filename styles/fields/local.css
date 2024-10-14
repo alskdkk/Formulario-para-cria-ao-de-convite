@@ -1,6 +1,6 @@
 
 
-input[type="text"] {
+#Local {
   appearance: none;
   width: 17rem;
   border: 1px solid var(--input-stroke);

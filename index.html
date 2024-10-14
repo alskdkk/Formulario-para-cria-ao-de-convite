@@ -30,7 +30,7 @@
           <div class="input-wrapper">
             
             <label for="eventname">Título</label>
-            <input type="text" id="eventname" name="eventname" placeholder="Nome do evento">
+            <input type="text" class="large-input" id="eventname" name="eventname" placeholder="Nome do evento">
           
           <div class="startend-wrapper">
             <div>
@@ -202,6 +202,52 @@
       </div>
       
     </fieldset>
+    <div class="contact flex">
+      <img src="assets/icons/contact.svg" alt="Icon de pincel">
+         <legend>Dados para contato</legend>
+        </div>
+    <fieldset id="user-info">
+      <div class="input-wrapper">
+        <div class="name">
+          <label for="fullname">Nome</label>
+          <input type="text" name="fullname" id="fullname" placeholder="Nome completo">
+        </div>
+        <div class="contact-info flex">
+          <div>
+            <label for="Email">E-mail</label>
+            <input type="email" id="Local" name="Email" placeholder="exemplo@email.com">
+          </div>
+          <div>
+            <label for="tel">Telefone</label>
+            <input type="text" name="tel" id="Local" placeholder="(99) 99999-9999">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="divisor"></div>
+    
+    <div class="terms-wrapper checkbox-wrapper flex">
+      <div class="checkbox-image"></div>
+      <input type="checkbox" id="termos">
+      <label for="termos">Li e concordo com os <u>Termos e Condições</u> e com a <u>Política de Privacidade</u></label>
+    </div>
+    <div class="terms-wrapper checkbox-wrapper flex">
+    <div class="checkbox-image"></div>
+    <input type="checkbox" id="termos1">
+    <label for="termos1">Aceito receber atualizações e promoções por e-mail</label>
+  </div>
+  <div class="terms-wrapper checkbox-wrapper flex">
+    <div class="checkbox-image"></div>
+    <input type="checkbox" id="termos1">
+    <label for="termos1">Aceito receber atualizações e promoções por SMS</label>
+  </div>
+    
+    <div>
+      <button class="btn-primary flex" type="submit">
+        <img class="checkbox-image" src="assets/icons/ticket.svg" alt="Icon de ticket">
+        Gerar convite
+      </button>
+    </div>
   </form>
  </div>
 </div>

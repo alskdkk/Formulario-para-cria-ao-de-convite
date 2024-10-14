@@ -40,6 +40,78 @@ label {
   gap: .75rem;
   margin-top: 3rem;
 }
-
-
 }
+
+
+
+.contact {
+  margin-top: 3rem;
+  margin-left: 8.125rem;
+  margin-bottom: 1.5rem;
+  gap: .75rem;
+  align-items: center;
+}
+
+.contact-info {
+  gap: 1rem;
+}
+
+.divisor {
+  border: 1px solid var(--input-stroke);
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.terms-wrapper {
+
+  margin-left: 8.125rem;
+  & u {
+    font-weight: 600;
+    color: var(--brand-light);
+  }
+
+  
+}
+
+.checkbox-wrapper {
+  gap: .75rem;
+
+
+  position: relative;
+
+  & [type='checkbox'] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.25rem;
+    height: 1.25rem;
+
+    background-image: url(../../assets/icons/checkbox.svg);
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../../assets/icons/checked.svg);
+  }
+}
+
+.btn-primary {
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  width: 11.063rem;
+  height: 3rem;  border-radius: .5rem;
+  background-color: var(--brand-dark);
+  cursor: pointer;
+
+  margin-left: auto;
+  margin-right: 8.125rem;
+  margin-bottom: 5rem;
+  background-color: var(--brand-dark);
+  border: 0;
+  font: 500 1rem var(--font-sans);
+  color: var(--text-heading);
+}
+  
